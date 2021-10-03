@@ -1,0 +1,242 @@
+/* Meets the following WCAG 2.1: success criteria:
+Contrast (Minimum) Level AA */
+
+/* Color palette used: rgb(45, 36, 36) rgb(92, 61, 46) rgb(184, 92, 56) rgb(224, 192, 151) */
+header{
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+header a{
+  color: white
+}
+header a:hover{
+  color: blue;
+}
+body{
+  margin: 0;
+  background-color: #E0C097;
+}
+main{
+  color:#E0C097;
+  margin: 0;
+  position: relative;
+}
+.header{
+  position: relative;
+  z-index: 2;
+}
+.logo-container{
+  width: 100%;
+  height: 130px;
+  padding: 10px 0 0;
+  background-image: linear-gradient(RGB(255, 255, 255, 1) 0%, RGB(255, 255, 255, 0) 110%);
+  position: absolute;
+  z-index: 1;
+}
+.logo-container div{
+  vertical-align: middle;
+  line-height: 130px;
+  display: inline-block;
+}
+.logo-container a{
+  text-decoration: none;
+}
+.logo{
+  width: 300px;
+  height: 100px;
+  background: radial-gradient(circle at 20% 30%, #B85C38 0%, #5C3D2E 45%, #2D2424 60%);
+  border-radius: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-family: fantasy;
+  font-size: 40px;
+  color: #E0C097;
+  margin-left: -20px;
+ }
+.triangle-right {
+  width: 50px;
+  height: 90px;
+  border-top: 30px solid transparent;
+  border-left: 40px solid #2D2424;
+  border-bottom: 30px solid transparent;
+  position: static;
+  margin-left: 20px;
+}
+.nav-bar{
+  font-family:fantasy;
+  font-size: 25px;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 20px;
+
+}
+.logo-container li {
+  display: inline;
+}
+.logo-container ul {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+.logo-container li a {
+  color: #2D2424;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.logo-container li a:hover {
+  background-color: #5C3D2E;
+  color: #E0C097;
+}
+.contents-container{
+  background-image: linear-gradient(RGB(255, 255, 255, 0.7) 0%, RGB(255, 255, 255, 0.7) 100%);
+  position: absolute;
+  z-index: 1;
+  top: 180px;
+  color: #2D2424;
+  font-family: cursive;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: scroll;
+  top: 180px;
+  bottom: 60px;
+}
+.contents{
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+body > div.contents-container > div > p:nth-child(3){
+  text-indent: 5em;
+}
+.roadinwilderness img{
+  width: 100%;
+}
+h2{
+  font-family: fantasy;
+  font-weight: 200;
+}
+h3{
+  font-family: fantasy;
+  font-weight: 200;
+}
+#images-slider {
+  overflow: hidden;
+  background-color: #E0C097;
+  height: 100%;
+}
+#images-slider figure {
+	position: relative;
+	width: 500%;    /* NOTE: in figure element there will be 5 horizontal images; first and last image are same*/
+	margin: 0;
+	left: 0;
+	animation: 20s images-slider infinite;
+}
+#images-slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes images-slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+/* footer */
+footer{
+  background-color: #E0C097;
+  font-family: monospace;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  margin: 0;
+  /* position: relative; */
+  /* z-index: 1; */
+}
+footer a{
+  text-decoration: none;
+}
+footer p{
+  color: #5C3D2E;
+  padding: 5px;
+  margin: 0;
+}
+footer > div{
+  margin: 5px;
+}
+
+.social-links{
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li{
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body > footer > div.row > div > ul > li > a:hover img{
+  position: relative;
+  top: -5px;
+}
+
+
+/* Overlay */
+/* .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #B85C38;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+.social-links p li a:hover{
+
+}
+body > .footer > div.row > ul > li > a:hover .overlay{
+  transform: scale(1);
+}
+.text {
+  color: #E0C097;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
