@@ -6,8 +6,20 @@ Text Spacing Level AA
 Content on Hover or Focus Level AA
 */
 /*
+W3C Markup Validation Service results (https://validator.w3.org/):
+"Document checking completed. No errors or warnings to show."
+*/
+/*
+W3C CSS Validator results for styles.css (http://jigsaw.w3.org/css-validator/):
+"Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
+*/
+/*
 Color palette used: rgb(45, 36, 36) rgb(92, 61, 46) rgb(184, 92, 56) rgb(224, 192, 151)
 */
+/*
+Site currently hosted on: https://sduzair.github.io/responsive-design-conestoga/. Check it out for updates.
+*/
+
 header {
   color: white;
   background-color: black;
