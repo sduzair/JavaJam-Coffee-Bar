@@ -52,7 +52,7 @@ main {
 
 .logo-container {
   width: 100%;
-  height: 130px;
+  height: 100px;
   padding: 10px 0 0;
   background-image: linear-gradient(RGB(255, 255, 255, 1) 0%, RGB(255, 255, 255, 0) 110%);
   position: absolute;
@@ -61,7 +61,7 @@ main {
 
 .logo-container div {
   vertical-align: middle;
-  line-height: 130px;
+  line-height: 100px;
   display: inline-block;
 }
 
@@ -129,13 +129,12 @@ main {
   background-image: linear-gradient(RGB(255, 255, 255, 0.7) 0%, RGB(255, 255, 255, 0.7) 100%);
   position: absolute;
   z-index: 1;
-  top: 180px;
   color: #2D2424;
   font-family: monospace;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
   overflow: scroll;
-  top: 180px;
+  top: 130px;
   bottom: 60px;
 }
 
@@ -153,12 +152,16 @@ main {
   box-sizing: border-box;
 }
 
+.contents .roadinwilderness {
+  text-align: center;
+}
+
 body>div.contents-container>div>p:nth-child(3) {
   text-indent: 5em;
 }
 
 .roadinwilderness img {
-  width: 100%;
+  width: auto%;
 }
 
 h2 {
