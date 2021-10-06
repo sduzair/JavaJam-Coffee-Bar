@@ -19,11 +19,16 @@ Color palette used: rgb(45, 36, 36) rgb(92, 61, 46) rgb(184, 92, 56) rgb(224, 19
 /*
 Site currently hosted on: https://sduzair.github.io/responsive-design-conestoga/. Check it out for updates.
 */
-
+/* home Styles */
+/* ----------------------------------------------------------------------------------------------------------------- */
 header {
   color: white;
   background-color: black;
   text-align: center;
+  /* position: relative; */
+  z-index: 2;
+  position: sticky;
+  top: 0;
 }
 
 header a {
@@ -42,43 +47,31 @@ body {
 main {
   color: #E0C097;
   margin: 0;
-  position: relative;
+  display: block;
 }
 
 .header {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(RGB(255, 255, 255, 1) 0%, RGB(255, 255, 255, 0) 110%);
   position: relative;
-  z-index: 2;
+  top: 0;
 }
 
 .logo-container {
-  width: 100%;
-  height: 100px;
-  padding: 10px 0 0;
-  background-image: linear-gradient(RGB(255, 255, 255, 1) 0%, RGB(255, 255, 255, 0) 110%);
-  position: absolute;
-  z-index: 1;
-}
-
-.logo-container div {
+  float: left;
   vertical-align: middle;
   line-height: 100px;
-  display: inline-block;
-}
-
-.logo-container a {
-  text-decoration: none;
 }
 
 .logo {
-  width: 300px;
-  height: 100px;
   background: radial-gradient(circle at 20% 30%, #B85C38 0%, #5C3D2E 45%, #2D2424 60%);
   border-radius: 35px;
   text-align: center;
   vertical-align: middle;
   line-height: 100px;
   font-family: fantasy;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #E0C097;
   background-color: #2D2424;
   margin-left: -20px;
@@ -95,153 +88,95 @@ main {
 }
 
 .nav-bar {
+  display: inline;
+  width: 40%;
+  vertical-align: middle;
+  line-height: 100px;
   font-family: fantasy;
   font-size: 25px;
-  display: inline-block;
-  justify-content: center;
   margin-left: 20px;
+  box-sizing: border-box;
 }
 
-.logo-container li {
-  display: inline;
-}
-
-.logo-container ul {
-  display: inline;
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-}
-
-.logo-container li a {
-  color: #2D2424;
-  text-align: center;
-  padding: 14px 16px;
+.header a {
   text-decoration: none;
 }
 
-.logo-container li a:hover {
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li a {
+  color: #2D2424;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav-bar li a:hover {
   background-color: #5C3D2E;
   color: #E0C097;
 }
 
-.contents-container {
+/* Homepage styles */
+/* -------------------------------------------------------------------------------------------------------- */
+#home-contents-wrapper {
   background-image: linear-gradient(RGB(255, 255, 255, 0.7) 0%, RGB(255, 255, 255, 0.7) 100%);
-  position: absolute;
+  position: relative;
   z-index: 1;
   color: #2D2424;
   font-family: monospace;
   margin-left: 3%;
   margin-right: 3%;
+  margin-top: 20px;
   overflow: scroll;
-  top: 130px;
-  bottom: 60px;
 }
 
-.contents-container p {
+#home-contents-wrapper p {
   font-size: 1.25em;
 }
 
-.contents-container ul {
-  font-size: 1.25em;
-}
-
-.contents {
-  padding: 10px 20px;
+#home-contents-wrapper>div {
+  padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.contents .roadinwilderness {
-  text-align: center;
-}
-
-body>div.contents-container>div>p:nth-child(3) {
+body>div#home-contents-wrapper>div>p:nth-child(3) {
   text-indent: 5em;
 }
 
-.roadinwilderness img {
-  width: auto%;
+#home-contents-wrapper img {
+  width: 80%;
 }
 
-h2 {
+#home-contents-wrapper>div>div {
+  text-align: center;
+}
+
+#home-contents-wrapper h2 {
   font-family: fantasy;
   font-weight: 200;
 }
 
-h3 {
-  font-family: fantasy;
-  font-weight: 200;
-}
+/* Menu page styles */
+/* -------------------------------------------------------------------------------------------------------- */
 
-#images-slider {
-  overflow: hidden;
-  background-color: #E0C097;
-  height: 100%;
-}
 
-#images-slider figure {
-  position: relative;
-  width: 500%;
-  /* NOTE: in figure element there will be 5 horizontal images; first and last image are same*/
-  margin: 0;
-  left: 0;
-  animation: 20s images-slider infinite;
-}
-
-#images-slider figure img {
-  float: left;
-  width: 20%;
-}
-
-@keyframes images-slider {
-  0% {
-    left: 0;
-  }
-
-  20% {
-    left: 0;
-  }
-
-  25% {
-    left: -100%;
-  }
-
-  45% {
-    left: -100%;
-  }
-
-  50% {
-    left: -200%;
-  }
-
-  70% {
-    left: -200%;
-  }
-
-  75% {
-    left: -300%;
-  }
-
-  95% {
-    left: -300%;
-  }
-
-  100% {
-    left: -400%;
-  }
-}
-
-/* footer */
+/* footer-------------------- */
 footer {
   background-color: #E0C097;
   font-family: monospace;
   font-size: 15px;
-  display: block;
   text-align: center;
-  margin: 0;
-  /* position: relative; */
-  /* z-index: 1; */
+  margin-top: 15px;
+  position: relative;
 }
 
 footer a {
@@ -273,6 +208,84 @@ footer>div {
 body>footer>div.row>div>ul>li>a:hover img {
   position: relative;
   top: -5px;
+}
+
+/* footer end------------------ */
+.cb-slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  z-index: 0;
+}
+
+.cb-slideshow div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow div:nth-child(1) {
+  background-image: url(../images/Pixabay/compressed/coffee-869203_1920.jpg)
+}
+
+.cb-slideshow div:nth-child(2) {
+  background-image: url(../images/Pixabay/compressed/coffee-beans-1291656_1920.jpg);
+  animation-delay: 6s;
+}
+
+.cb-slideshow div:nth-child(3) {
+  background-image: url(../images/Pixabay/compressed/food-5158702_1920.jpg);
+  animation-delay: 12s;
+}
+
+.cb-slideshow div:nth-child(4) {
+  background-image: url(../images/Pixabay/compressed/free-coffee-wallpaper-1.jpg);
+  animation-delay: 18s;
+}
+
+.cb-slideshow div:nth-child(5) {
+  background-image: url(../images/Pixabay/compressed/coffee-869203_1920.jpg);
+  animation-delay: 24s;
+}
+
+.cb-slideshow div:nth-child(6) {
+  background-image: url(../images/Pixabay/compressed/coffee-beans-1291656_1920.jpg);
+  animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1
+  }
+
+  25% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
 /* Overlay */
