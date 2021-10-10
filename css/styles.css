@@ -236,15 +236,11 @@ body>div#home-contents-wrapper>div>p:nth-child(3) {
   left: 0;
   margin: 0;
   margin-top: -25px;
-  /* background-image: url("../images/heromugs.jpg"); */
 }
 
 .menu-contents-nav a {
   text-decoration: none;
 }
-/* #menu-contents-wrapper > div.menu-contents-nav > ul{
-  background-image: linear-gradient(rgb(224, 192, 151, 0.5) 0%, rgb(224, 192, 151, 0.5) 100%);
-} */
 
 .menu-contents-nav li {
   display: inline;
@@ -274,8 +270,8 @@ body>div#home-contents-wrapper>div>p:nth-child(3) {
   display: block;
   width: 100%;
   vertical-align: middle;
-  line-height: 100px;
-  height: 100px;
+  /* line-height: 100px; */
+  height: 150px;
   margin-left: 20px;
   box-sizing: border-box;
   position: relative;
