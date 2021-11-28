@@ -47,14 +47,21 @@ main {
   display: block;
 }
 
-.header {
+/* Header styles */
+/* -------------------------------------------------------------------------------------------------------- */
+.header-wrapper {
   width: 100%;
   height: auto;
   background-image: linear-gradient(rgb(224, 192, 151, 1) 0%, rgb(224, 192, 151, 0) 100%);
   position: sticky;
   top: 0;
-  z-index: 300;
-
+  z-index: 301;
+}
+.header-wrapper .header-aside{
+  float: right;
+  border-radius: 30px;
+  display: inline;
+  position: relative;
 }
 
 .logo-container {
@@ -99,11 +106,9 @@ main {
   font-size: 25px;
   margin-left: 20px;
   box-sizing: border-box;
+  position: relative;
+  float: left;
 }
-
-/* .header a {
-  text-decoration: none;
-} */
 
 .nav-bar li {
   display: inline;
@@ -126,11 +131,13 @@ main {
 .nav-bar a:hover {
   background-color: #5C3D2E;
   color: #E0C097;
+  border-radius: 30px;
 }
 
 .nav-bar .current {
   background-color: #5C3D2E;
   color: #E0C097;
+  border-radius: 30px;
 }
 .menu-contents-nav .current{
   background-color: #5C3D2E;
@@ -142,6 +149,7 @@ main {
 /* Homepage styles */
 /* -------------------------------------------------------------------------------------------------------- */
 #home-contents-wrapper {
+  display: block;
   background-image: linear-gradient(rgb(224, 192, 151, 0.7) 0%, rgb(224, 192, 151, 0.7) 100%);
   position: relative;
   z-index: 1;

@@ -1,0 +1,12 @@
+Assignment 1 - Due Week 5 (October 4th) by 10 am 
+Assignment 1 is the beginning creation of 1 of 4 company websites that have been supplied. 
+
+Creating your First HTML and CSS Page.  You need to create the home page (single page) of the website based on weeks 2 through 5.  The web page must coded in symantic HTML code and use CSS to create the layout of the page and style of the page. 
+
+It must use the images supplied and be built to be accessibility friendly.  
+It must use Lorum Ipsum generated text as a place holder to demonstrate font styling
+It must have a navigation with room for 3 additional pages from assignment 2, 3 and 4.  pages (i.e Home, About Us, Services, Menu, etc., and a Contact Us page) 
+Must have an external stylesheet 
+Demonstrate styling on the page with CSS (i.e. borders, boxes, background colours, shadowing)
+Appealing design
+Must pass css validation  http://jigsaw.w3.org/css-validator/
