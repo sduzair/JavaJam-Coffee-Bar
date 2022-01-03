@@ -1,9 +1,9 @@
 # Responsive Site Design Project: JavaJam coffee bar
-##Introduction
+## Introduction
 This is a four page responsive website.
-##Responsive Design Principles
-  -Semantic elements
-  -Flexbox
-  -Flexgrid
-  -Responsive Table
-  -Responsive Form
+## Responsive Design Principles
+   -Semantic elements
+   -Flexbox
+   -Flexgrid
+   -Responsive Table
+   -Responsive Form
