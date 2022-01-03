@@ -7,3 +7,4 @@ This is a four page responsive website.
    - Flexgrid
    - Responsive Table
    - Responsive Form
+   - Media queries
