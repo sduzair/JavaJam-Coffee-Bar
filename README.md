@@ -8,3 +8,5 @@ This is a four page responsive website.
    - Responsive Table
    - Responsive Form
    - Media queries
+
+Hosted on: [https://sduzair.github.io/javaJam-coffee-bar/](https://sduzair.github.io/javaJam-coffee-bar/)
