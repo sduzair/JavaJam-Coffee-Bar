@@ -1,0 +1,20 @@
+name : example
+on : [push]
+jobs : 
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
+  job-2:
+    runs-on: windows-latest
+    steps:
+      - run: date
+  job-3:
+    runs-on: macos-latest
+    steps:
+      - run: date
+  job-4:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
+    needs: [job-1, job-2, job-3]
